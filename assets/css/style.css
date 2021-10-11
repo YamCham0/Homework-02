@@ -1,0 +1,13 @@
+article {
+        border-style: solid;
+        font-size: medium;
+        border-color: crimson;
+}
+nav {
+    float: right;
+}
+
+
+h1 {
+    color: blueviolet;
+}
