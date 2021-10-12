@@ -11,3 +11,11 @@ nav {
 h1 {
     color: blueviolet;
 }
+
+.myInfo {
+    color: blueviolet;
+}
+
+.myImgs {
+    display: flex;
+    margin: auto;
