@@ -4,7 +4,12 @@
     --darklight-blue: #57737A;
     --Celeste: #C2FCF7;
     --Midnight: #85BDBF;
-    background-color: var(--warmblack);
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -43,26 +48,109 @@ h1 {
     color: var(--Celeste);
 }
 
+h3 {
+    color: var(--Celeste);
+    margin-left: 18px;
+}
+
 div p {
     color: var(--Midnight);
     
 }
 
 
+#hover{
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
 
 .myImgs {
-    flex-direction: row;
+    /* flex-direction: row; */
     display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    padding: 26px;
     
 }
+
+#img1{
+    margin: 20px;
+    padding: 5px;
+    /* Z index
+    hover effects
+    /* border*/
+}
+
+
+#img2 {
+    margin: 20px;
+    /* margin-left: 170px; */
+    padding: 5px;
+    /* Z index
+    hover effects
+    border */
+}
+
+
+#img3 {
+    /* animation: pulse 2s infinite; */
+    margin: 20px;
+    padding: 5px;
+    /* Z index
+    hover effects
+    border */
+}
+
+
+#img4 {
+    margin: 20px;
+    padding: 5px;
+    /* Z index
+    hover effects
+    border */
+}
+
 
 aside p {
     font-weight: bold;
 }
 
 aside {
-    border: 15px solid var(--darkblack);
+    border: 15px solid var(--Midnight);
     float: right;
     height: 750px;
     margin-bottom: 200px;
+}
+#artc {
+    display: flex;
+    color: var(--Midnight); 
+}
+
+
+[data-aos="example-anim3"] {
+    transform: rotate(360deg);
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+        transform: rotate(0);
+        opacity: 1;
+    }
 }
