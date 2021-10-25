@@ -44,6 +44,13 @@ li a {
 }
 
 
+/* figure a { 
+    line-height: 0; 
+    font-size: 0;
+    color: transparent;
+} */
+
+
 h1 {
     font-size: 56pt;
     text-align: center;
@@ -106,6 +113,8 @@ div p {
 }
 
 #img1{
+    height: 250px;
+    width: 850px;    
     margin: auto;
     padding: 5%;
     /* Z index
@@ -115,6 +124,8 @@ div p {
 
 
 #img2 {
+    height: 200px;
+    width: 600px;
     margin: auto;
     padding: 5%;
     /* margin-left: 170px; */
@@ -125,6 +136,8 @@ div p {
 
 
 #img3 {
+    height: 200px;
+    width: 500px;
     margin: auto;
     padding: auto;
     /* animation: pulse 2s infinite; */
@@ -137,6 +150,8 @@ div p {
 
 
 #img4 {
+    height: 200px;
+    width: 500px;
     margin: auto;
     padding: auto;
     /* Z index
@@ -144,6 +159,10 @@ div p {
     border */
 }
 
+.links {
+    margin: auto;
+    padding: 5%;
+}
 
 /* aside p {
     font-weight: bold;
@@ -173,3 +192,49 @@ aside {
         opacity: 1;
     }
 } */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: auto;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: var(--darklight-blue);
+    color: var(--darkblack);
+    font-size: 24px;
+    padding: 16px 32px;
+}
