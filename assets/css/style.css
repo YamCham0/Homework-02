@@ -17,6 +17,8 @@ body {
 article {
     font-size: 10pt;
 }
+
+
 nav {
     position: absolute;
     top: 0;
@@ -43,8 +45,9 @@ li a {
 
 
 h1 {
+    font-size: 56pt;
+    text-align: center;
     padding-top: 25px;
-    max-width: 200px;
     color: var(--Celeste);
 }
 
@@ -55,22 +58,23 @@ h3 {
 
 div p {
     color: var(--Midnight);
+    font-size: 24px;
     
 }
 
 
-#hover{
+/* #hover{
     position: relative;
     width: 50%;
     max-width: 300px;
-}
+} */
 
 
-.overlay {
+/* .overlay {
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
@@ -79,21 +83,31 @@ div p {
     font-size: 20px;
     padding: 20px;
     text-align: center;
+} */
+
+
+#hero {
+    display: block;
+    margin: auto;
+    max-height: 250px;
+    max-width: 250px;
+    border-radius: 50%;
 }
 
 
 .myImgs {
+
     /* flex-direction: row; */
     display: flex;
     flex-wrap: wrap;
-    margin: 25px;
-    padding: 26px;
+    margin: auto;
+    padding: auto;
     
 }
 
 #img1{
-    margin: 20px;
-    padding: 5px;
+    margin: auto;
+    padding: 5%;
     /* Z index
     hover effects
     /* border*/
@@ -101,9 +115,9 @@ div p {
 
 
 #img2 {
-    margin: 20px;
+    margin: auto;
+    padding: 5%;
     /* margin-left: 170px; */
-    padding: 5px;
     /* Z index
     hover effects
     border */
@@ -111,9 +125,11 @@ div p {
 
 
 #img3 {
+    margin: auto;
+    padding: auto;
     /* animation: pulse 2s infinite; */
-    margin: 20px;
-    padding: 5px;
+    /* margin: 20px; */
+    /* padding: 5px; */
     /* Z index
     hover effects
     border */
@@ -121,31 +137,34 @@ div p {
 
 
 #img4 {
-    margin: 20px;
-    padding: 5px;
+    margin: auto;
+    padding: auto;
     /* Z index
     hover effects
     border */
 }
 
 
-aside p {
+/* aside p {
     font-weight: bold;
 }
 
 aside {
-    border: 15px solid var(--Midnight);
+    border: 15px solid var(--warmblack);
+    border-radius: 5%;
     float: right;
     height: 750px;
     margin-bottom: 200px;
 }
+
+
 #artc {
     display: flex;
     color: var(--Midnight); 
-}
+} */
 
 
-[data-aos="example-anim3"] {
+/* [data-aos="example-anim3"] {
     transform: rotate(360deg);
     opacity: 0;
     transition-property: transform, opacity;
@@ -153,4 +172,4 @@ aside {
         transform: rotate(0);
         opacity: 1;
     }
-}
+} */
