@@ -39,6 +39,9 @@ li {
 }
 
 li a {
+    font-size: 20pt;
+    color: var(--Celeste);
+    text-decoration: none;
     display: block;
     padding: 8px;
 }
@@ -59,11 +62,19 @@ h1 {
 }
 
 h3 {
+    font-size: 24pt;
     color: var(--Celeste);
     margin-left: 18px;
 }
 
+#infoHouse {
+    margin: auto;
+    padding: auto;
+}
+
 div p {
+    margin: auto;
+    padding: auto;
     color: var(--Midnight);
     font-size: 24px;
     
@@ -102,21 +113,19 @@ div p {
 }
 
 
-.myImgs {
-
-    /* flex-direction: row; */
+/* .myImgs {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     padding: auto;
     
-}
+} */
 
 #img1{
-    height: 250px;
-    width: 850px;    
+    height: 200px;
+    width: 10px;    
     margin: auto;
-    padding: 5%;
+    padding: auto;
     /* Z index
     hover effects
     /* border*/
@@ -125,9 +134,9 @@ div p {
 
 #img2 {
     height: 200px;
-    width: 600px;
+    width: 1000px;
     margin: auto;
-    padding: 5%;
+    padding: auto;
     /* margin-left: 170px; */
     /* Z index
     hover effects
@@ -137,7 +146,7 @@ div p {
 
 #img3 {
     height: 200px;
-    width: 500px;
+    width: 600px;
     margin: auto;
     padding: auto;
     /* animation: pulse 2s infinite; */
@@ -151,7 +160,7 @@ div p {
 
 #img4 {
     height: 200px;
-    width: 500px;
+    width: 600px;
     margin: auto;
     padding: auto;
     /* Z index
@@ -160,6 +169,7 @@ div p {
 }
 
 .links {
+    text-decoration: none;
     margin: auto;
     padding: 5%;
 }
@@ -197,7 +207,7 @@ aside {
 #theContainer {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin-top: 300px;
     padding: auto;
 }
 
