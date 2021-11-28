@@ -7,4 +7,4 @@
 * My projects.
 * Contact information
 
-![Screenshot of my portfolio.](assets\images\portfolio.png)
+![Screenshot of my portfolio.](./assets/images/portfolio.png)
